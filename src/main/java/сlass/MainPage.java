@@ -9,7 +9,6 @@ public class MainPage {
     private WebDriver driver;
 
     // Локаторы элементов главной страницы:
-
     // Кнопка «Заказать» вверху страницы
     private By aboveToOrderButton = By.xpath("//button[@class='Button_Button__ra12g']");
 
@@ -53,8 +52,6 @@ public class MainPage {
     private By question8 = By.id("accordion__heading-7");
     private By response8 = By.id("accordion__panel-7");
 
-
-
     public MainPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -63,7 +60,6 @@ public class MainPage {
         driver.findElement(cookieButton).click();
         return this;
     }
-
 
     public MainPage clickOrderDown() {
         scrollToOrderDown();
